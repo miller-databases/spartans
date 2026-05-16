@@ -1,0 +1,55 @@
+﻿Status,Age,Program,Cost,Discount,Price,Payment1a,Payment1b,Payment2a,Payment2b,Payment3,Payment4
+New  ,Masters,Full year,1950,300,1650,495,495,0,300,660,495
+New  ,Open,Full year,1950,300,1650,495,495,0,300,660,495
+New  ,U16,Full year,0,0,0,0,0,0,0,0,0
+New  ,U18,Full year,1950,300,1650,495,495,0,300,660,495
+New  ,U20,Full year,1950,300,1650,495,495,0,300,660,495
+New  ,Masters,NextGen,600,150,450,450,450,0,150,0,0
+New  ,Open,NextGen,600,150,450,450,450,0,150,0,0
+New  ,U14,NextGen,600,150,450,450,450,0,150,0,0
+New  ,U16,NextGen,600,150,450,450,450,0,150,0,0
+New  ,U18,NextGen,600,150,450,450,450,0,150,0,0
+New  ,U20,NextGen,600,150,450,450,450,0,150,0,0
+New  ,Masters,Outdoor,700,150,550,550,700,0,0,0,0
+New  ,Open,Outdoor,700,150,550,550,700,0,0,0,0
+New  ,U10,Outdoor,600,150,450,450,600,0,0,0,0
+New  ,U12,Outdoor,600,150,450,450,600,0,0,0,0
+New  ,U14,Outdoor,600,150,450,450,600,0,0,0,0
+New  ,U16,Outdoor,700,150,550,550,700,0,0,0,0
+New  ,U18,Outdoor,700,150,550,550,700,0,0,0,0
+New  ,U20,Outdoor,700,150,550,550,700,0,0,0,0
+New  ,Masters,X-Country,275,0,275,275,275,0,0,0,0
+New  ,Open,X-Country,275,0,275,275,275,0,0,0,0
+New  ,U10,X-Country,200,0,200,200,200,0,0,0,0
+New  ,U12,X-Country,200,0,200,200,200,0,0,0,0
+New  ,U14,X-Country,200,0,200,200,200,0,0,0,0
+New  ,U16,X-Country,275,0,275,275,275,0,0,0,0
+New  ,U18,X-Country,275,0,275,275,275,0,0,0,0
+New  ,U20,X-Country,275,0,275,275,275,0,0,0,0
+Not New,Masters,Full year,1950,300,1650,495,495,0,300,660,495
+Not New,Open,Full year,1950,300,1650,495,495,0,300,660,495
+Not New,U16,Full year,1950,300,1650,495,495,0,300,660,495
+Not New,U18,Full year,1950,300,1650,495,495,0,300,660,495
+Not New,U20,Full year,1950,300,1650,495,495,0,300,660,495
+Not New,Masters,NextGen,600,150,450,450,450,0,150,0,0
+Not New,Open,NextGen,600,150,450,450,450,0,150,0,0
+Not New,U14,NextGen,600,150,450,450,450,0,150,0,0
+Not New,U16,NextGen,600,150,450,450,450,0,150,0,0
+Not New,U18,NextGen,600,150,450,450,450,0,150,0,0
+Not New,U20,NextGen,600,150,450,450,450,0,150,0,0
+Not New,Masters,Outdoor,700,150,550,550,700,0,0,0,0
+Not New,Open,Outdoor,700,150,550,550,700,0,0,0,0
+Not New,U10,Outdoor,600,150,450,450,600,0,0,0,0
+Not New,U12,Outdoor,600,150,450,450,600,0,0,0,0
+Not New,U14,Outdoor,600,150,450,450,600,0,0,0,0
+Not New,U16,Outdoor,700,150,550,550,700,0,0,0,0
+Not New,U18,Outdoor,700,150,550,550,700,0,0,0,0
+Not New,U20,Outdoor,700,150,550,550,700,0,0,0,0
+Not New,Masters,X-Country,275,0,275,275,275,0,0,0,0
+Not New,Open,X-Country,275,0,275,275,275,0,0,0,0
+Not New,U10,X-Country,200,0,200,200,200,0,0,0,0
+Not New,U12,X-Country,200,0,200,200,200,0,0,0,0
+Not New,U14,X-Country,200,0,200,200,200,0,0,0,0
+Not New,U16,X-Country,275,0,275,275,275,0,0,0,0
+Not New,U18,X-Country,275,0,275,275,275,0,0,0,0
+Not New,U20,X-Country,275,0,275,275,275,0,0,0,0

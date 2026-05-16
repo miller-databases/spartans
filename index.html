@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Fee Calculator</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Registration Fee Calculator</h1>
+        
+        <div class="filters">
+
+            <div class="filter-group">
+                <label>Who are you?</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="status" id="status-new" value="New" onchange="filterByStatus(this.value)" checked> Yes, I am new to track</label>
+                    <label><input type="radio" name="status" id="status-not-new" value="Not New" onchange="filterByStatus(this.value)"> No, I am a returning member</label>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <label>What is your age category?</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="age" id="age-u10" value="U10" onchange="applyAllFilters()"> U10</label>
+                    <label><input type="radio" name="age" id="age-u12" value="U12" onchange="applyAllFilters()"> U12</label>
+                    <label><input type="radio" name="age" id="age-u14" value="U14" onchange="applyAllFilters()"> U14</label>
+                    <label><input type="radio" name="age" id="age-u16" value="U16" onchange="applyAllFilters()"> U16</label>
+                    <label><input type="radio" name="age" id="age-u18" value="U18" onchange="applyAllFilters()"> U18</label>
+                    <label><input type="radio" name="age" id="age-u20" value="U20" onchange="applyAllFilters()"> U20</label>
+                    <label><input type="radio" name="age" id="age-open" value="Open" onchange="applyAllFilters()" checked> Open</label>
+                    <label><input type="radio" name="age" id="age-masters" value="Masters" onchange="applyAllFilters()"> Masters</label>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <label>Which seasons are you interested in?</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="program" id="program-yes" value="Full" onchange="filterByProgram(this.value)" checked> Full year</label>
+                    <label><input type="radio" name="program" id="program-no" value="Partial" onchange="filterByProgram(this.value)"> Specific seasons:</label>
+
+                    <div class="filter-groupx" id="seasonFilter" style="display: none;">
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="nextgen-check" value="NextGen" onchange="filterBySeason()" checked> NextGen</label>
+                            <label><input type="checkbox" id="outdoor-check" value="Outdoor" onchange="filterBySeason()" checked> Outdoor</label>
+                            <label><input type="checkbox" id="xcountry-check" value="X-Country" onchange="filterBySeason()" checked> X-Country</label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <label>Does your family have a Volunteer Commitment deposit on file with the Spartans?</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="vcd" id="vcd-yes" value="Yes" onchange="toggleVCDColumns(this.value)"> Yes</label>
+                    <label><input type="radio" name="vcd" id="vcd-no" value="No" onchange="toggleVCDColumns(this.value)" checked> No</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="searchResults" class="table-container">
+            <table>
+                <thead>
+				<tr>
+				<th colspan="6"></th>
+				<th colspan="6">Payment Due Date</th>
+				</tr>
+                    <tr>
+                        <th>Status</th>
+                        <th>Category</th>
+                        <th>Season</th>
+                        <th class="cost-column">Cost</th>
+                        <th id="discount-header" class="vcd-yes-column">Discount</th>
+                        <th>Price</th>
+                        <th id="payment1a-header" class="vcd-yes-column">At Registration</th>
+                        <th id="payment1b-header" class="vcd-no-column">At Registration</th>
+                        <th id="payment2a-header" class="vcd-yes-column">Oct 1</th>
+                        <th id="payment2b-header" class="vcd-no-column">Oct 1</th>
+                        <th>Oct 22</th>
+                        <th>Mar 15</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTableBody">
+                    <!-- Table rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+		
+		<div id="oops" style="padding:20px; border:dotted 1px silver; background-color: #FEFCBF;">
+			Sorry, there is no registration available for the options you have selected.
+		</div>
+		
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

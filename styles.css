@@ -1,0 +1,223 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    background: white;
+    min-height: 100vh;
+}
+
+input { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; }
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: left;
+    color: #2c3e50;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    gap: 20px;
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.filter-group > label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #2c3e50;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-group label:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.checkbox-group input[type="checkbox"], 
+.checkbox-group input[type="radio"] {
+    margin: 0;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+select {
+    padding: 10px 15px;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 14px;
+}
+
+th {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid #1a5490;
+}
+
+td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+    /* transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.even-row {
+    background: #f8f9fa;
+}
+
+.price-highlight {
+    font-weight: bold;
+    color: #1a5490;
+    font-size: 16px;
+}
+
+.status-new {
+    background: #d5f4e6;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-not-new {
+    background: #fdeaa7;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* VCD Column styling */
+.vcd-yes-column, .vcd-no-column {
+    transition: all 0.3s ease;
+}
+
+.vcd-yes-column.hidden, .vcd-no-column.hidden {
+    display: none;
+}
+
+/* Custom scrollbar */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #2980b9, #1a5490);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+}
+
+/* Animation for table load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table-container {
+    animation: fadeInUp 0.6s ease-out;
+}
